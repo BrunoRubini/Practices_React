@@ -6,7 +6,7 @@ const Table = ({ netIncomes }) => {
             <table>
                 <thead>
                     <tr>
-                        <th>Nombre de la Marca</th>
+                        <th>Marca</th>
                         <th>Ingreso Neto</th>
                     </tr>
                 </thead>
