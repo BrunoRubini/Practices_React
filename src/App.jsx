@@ -1,11 +1,15 @@
+import { useState } from 'react';
 import './App.css'
+import TaskForm from './components/TaskForm';
+import TaskList from './components/TaskList';
 
 function App() {
-  
+  const [tasks, setTasks] = useState([]);
 
   return (
     <>
-      <h3>Prácticas de Laboratorio 3</h3>
+      <TaskForm data={tasks} setTasks={setTasks}></TaskForm>
+      <TaskList data={tasks} setTasks={setTasks}></TaskList>
     </>
   )
 }
